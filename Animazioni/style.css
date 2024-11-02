@@ -113,8 +113,42 @@ h1, h2, h3, h3, h4, h5, p {color: black; padding-bottom: 30px;}
 
 /*! Carousel */
 
-.main-carousel{padding: 40px 0;}ù
-.carousel-cell{height: 350px;width: 350px;}
+.main-carousel{padding: 40px 0;} 
+.carousel-cell{
+    height: 350px;
+    width: 350px;
+    background: #6adf91;
+    border-radius: 100%;
+    line-height: 350px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+/*! Panel */
+
+.panel-blue{background: #4bb1e9;padding: 30px;}
+.panel-text{display: flex;align-items: center;}
+
+.dot{height: 250px;
+    width: 250px;
+    background: #6adf91;
+    border-radius: 100%;
+    line-height: 250px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+ /*! Footer */
+ 
+ 
+ .footer{
+    background: #010e30;
+    padding: 150px 0;
+ }
 
 
 
