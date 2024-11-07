@@ -13,6 +13,8 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
 
+<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
 </head>
 <body>
     <div class="header">
@@ -30,18 +32,21 @@
     </div>
 
     <div class="hero">
-        <div class="hero_content">
+        <div class="hero_content reveal">
             <p class="intro-text">Intro Text</p>
             <h1 class="big-text">My Page</h1>
             <a href="" class="button">Discover More</a>
         </div>
+        <video autoplay muted loop id="office-video">
+            <source src="Office.mp4" type="video/mp4">
+        </video>
     </div>
     
     <div class="poster mt-3">
-        <div class="poster_img">
+        <div class="poster_img reveal">
             <img src="Foto.jpg" alt="">
         </div>
-        <div class="poster_content">
+        <div class="poster_content reveal">
             <h3 class="big-text">Titolo</h3>
             <p>Trasparence, Comunication et Accompagnement sont trois valeurs que nous appliquons au quotidien avec nos Clients, nos Candidats et notre Equipe.</p>
             <a href="" class="button">Call to action</a>
@@ -49,10 +54,10 @@
     </div>
 
     <div class="bg-cover mt-3">
-        <div class="bg-title">
+        <div class="bg-title reveal">
             <h3 class="big-text tw">Titolo Blog Cover</h3>
         </div>
-        <div class="bg-text">
+        <div class="bg-text reveal">
             <h4 class="tw normal-text">Titolo Paragrafo</h4>
             <p class="tw ">Testo Paragrafo</p>
             <h4 class="tw normal-text">Titolo Paragrafo</h4>
@@ -63,21 +68,51 @@
     </div>
 
     <div class="grid mt-3">
-        <div class="col">
+        <div class="col reveal">
             <h3 class="big-text">Lorem ispums <br>sia meat</h3>
         </div>
-        <div class="col">
+        <div class="col reveal">
             <p class="mt-2">Trasparence, Comunication et Accompagnement sont trois valeurs que nous appliquons au quotidien avec nos Clients, nos Candidats et notre Equipe.</p>
         </div>
     </div>
 
     <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-        <div class="carousel-cell">Text</div>
-        <div class="carousel-cell">Text</div>
-        <div class="carousel-cell">Text</div>
-        <div class="carousel-cell">Text</div>
-        <div class="carousel-cell">Text</div>
-        <div class="carousel-cell">Text</div>
+        <div class="carousel-cell">
+            <div class="carousel-content zoom">
+                text
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-content zoom">
+                text
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-content zoom">
+                text
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-content zoom">
+                text
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-content zoom">
+                text
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-content zoom">
+                text
+            </div>
+        </div>
+        <div class="carousel-cell">
+            <div class="carousel-content zoom">
+                text
+            </div>
+        </div>
+        
     </div>
     
     <div class="panel-blue">
@@ -122,7 +157,11 @@
     </div>
 </div>
 </footer>
+<script>
+    ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 600 });
+    ScrollReveal().reveal('.zoom', { duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: 200, scale: 0.65 });
 
+</script>
 
 
 
